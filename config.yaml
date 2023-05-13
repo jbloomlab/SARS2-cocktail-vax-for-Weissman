@@ -1,0 +1,19 @@
+# Wuhan-Hu-1 "reference" spike protein
+ref_spike: YP_009724390
+
+# components of parent vaccine
+parent_spikes:
+  # EPI_ISL_16835403 is first US XBB.1.16 isolate:
+  # https://github.com/cov-lineages/pango-designation/issues/1723/
+  # which has this spike protein accession:
+  # https://www.ncbi.nlm.nih.gov/protein/2440446690
+  XBB.1.16: WCM02109
+  
+# total number of components per cocktail
+components_per_cocktail: 5
+
+# mutations per design in cocktails
+mutations_per_design:
+  cocktail: 4
+  aggressive-cocktail: 6
+  conservative-cocktail: 2

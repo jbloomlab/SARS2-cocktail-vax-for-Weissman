@@ -17,3 +17,16 @@ mutations_per_design:
   cocktail: 4
   aggressive-cocktail: 6
   conservative-cocktail: 2
+
+# escape calculator settings, taken from specific commit indicated, which uses XBB as the "parent".
+escapecalculator:
+  module_url: https://raw.githubusercontent.com/jbloomlab/SARS2-RBD-escape-calc/683abdd4c3277a3cbc20cddd7ab98ff844f9ef80/escapecalculator.py
+  kwargs:
+    antibody_ic50s: https://raw.githubusercontent.com/jbloomlab/SARS2-RBD-escape-calc/683abdd4c3277a3cbc20cddd7ab98ff844f9ef80/results/antibody_IC50s.csv
+    antibody_binding: https://raw.githubusercontent.com/jbloomlab/SARS2-RBD-escape-calc/683abdd4c3277a3cbc20cddd7ab98ff844f9ef80/results/antibody_binding.csv
+    antibody_sources: https://raw.githubusercontent.com/jbloomlab/SARS2-RBD-escape-calc/683abdd4c3277a3cbc20cddd7ab98ff844f9ef80/results/antibody_sources.csv
+    antibody_reweighting: https://raw.githubusercontent.com/jbloomlab/SARS2-RBD-escape-calc/683abdd4c3277a3cbc20cddd7ab98ff844f9ef80/results/antibody_reweighting.csv
+    config: https://raw.githubusercontent.com/jbloomlab/SARS2-RBD-escape-calc/683abdd4c3277a3cbc20cddd7ab98ff844f9ef80/config.yaml
+  parent_existing_mut_sites:
+    # existing mutated sites in RBD for each parent relative to XBB
+    XBB.1.16: [478]
